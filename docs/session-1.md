@@ -4,7 +4,7 @@
 
 Dưới đây là 1 đoạn code css.
 
-```
+```css
 div.box {
     color: rgb(170, 0, 210) !important;
 }
@@ -19,7 +19,7 @@ div.main > table {
   Nhưng tôi sẽ cố gắng trình bày 1 cách cặn kẽ để bạn có thể hiểu được vì sao css được viết như trên.
 
 Ok, ta có 1 ví dụ như sau:
-```
+```css
 h1 {
     color: red;
     font-size: 16px;
@@ -37,7 +37,7 @@ Bổ sung thêm:
 - Attribute value (value)
 
 Nhìn cú pháp trên giống object trong JavaScript.
-```
+```javascript
 const myStyle = {
     color: 'red',
     'font-size': '16px'
@@ -62,7 +62,7 @@ Dưới đây là 1 ví dụ về DOM tree.
 <br/>
 
 Hình ảnh trên mô tả đoạn code **HTML** dươí đây
-```
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -87,7 +87,7 @@ Trong phần này tôi sẽ demo 4 cách dùng selector cơ bản trong CSS.
 Tức là ta có thể dùng các tên thẻ làm selector.
 Các thẻ như: **div, session, p, a, nav...** <br/>
 Ví dụ: tôi muốn tạo ra 1 đoạn văn bản có chữ màu đỏ.
-```
+```css
   p {
     color: red;
   }
@@ -96,7 +96,7 @@ Ví dụ: tôi muốn tạo ra 1 đoạn văn bản có chữ màu đỏ.
 Trong 1 document có thẻ mà có attribute là id thì ta có thể dựa vào id để select element đó. <br/>
 Ví dụ: Trong document **có id là table-staff-list** và tôi muốn tăng chiều rộng là 600px.
 
-```
+```html
 <!-- Đây là code HTML -->
 <!DOCTYPE html>
 <html lang="vi">
@@ -122,7 +122,7 @@ table-staff-list {
 Giống như select theo id thì ta có class. <br/>
 Ví dụ: Dựa vào đoạn HTML bên trên ta sẽ css cho **class là item** có cỡ chữ là 16px và cẵn giữa.
 
-```
+```css
   .item {
     font-size: 16px;
     text-align: center;
@@ -132,7 +132,7 @@ Ví dụ: Dựa vào đoạn HTML bên trên ta sẽ css cho **class là item** 
 - **Select a group** <br/>
 Tức là ta có thể css 1 lúc nhiều elements.
 Dưới đây là 1 ví dụ về css vừa thẻ p, vừa class item có chữ màu xanh dương.
-```
+```css
   p, .item {
     color: blue;
   }
@@ -162,16 +162,22 @@ Tương tự như rgb tuy nhiên có 1 tham số là alpha.
 ## Styling text
 Ở phần này chúng ta cùng tìm hiểu các attribue để style cho text trong document nhé.
 
-| property  | value
-| -------   | ---- |
-| color    | Hex code or rgb() or rgab()   |
-| text-align    | center \| left \| right \| justify   |
-| text-decoration    | none \| underline \| overline \| line-through   |
-| text-indent    |  Xpx  |
-| letter-spacing    |  Xpx  |
-| word-spacing    |  Xpx  |
-| line-heigh |  là 1 số \| ví dụ: 1.5  |
-| text-shadow    |  x y color blur  |
+
+<div align="center">
+  
+| property       | value               |
+| -------------- | ------------------- |
+| color          | Hex code or rgb()   |
+| text-align     | center \| left \| right \| justify |
+| text-decoration | none \| underline \| overline \| line-through |
+| text-indent    | Xpx                 |
+| letter-spacing | Xpx                 |
+| word-spacing   | Xpx                 |
+| line-heigh     | là 1 số \| ví dụ: 1.5 |
+| text-shadow    | x y color blur      |
+
+</div>
+
 
 
 ## Chia sẻ cách nhớ các attributes trong CSS
