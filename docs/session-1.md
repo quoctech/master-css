@@ -111,9 +111,9 @@ Ví dụ: Trong document **có id là table-staff-list** và tôi muốn tăng c
     <div class="item">yyy</div>
 </body>
 </html>
-
-<!-- Đây là code css -->
-table-staff-list {
+```
+```css
+#table-staff-list {
   width: 600px;
 }
 ```
